@@ -56,12 +56,12 @@
 
 .first-row{
     position: relative;
-    width: 35vw;
+    width: 30vw;
     height: 100vh;
     background-image: url(background.jpg);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 5px;
 }
 
@@ -72,7 +72,9 @@
 }
 
 .dark-background{
-    background-color:rgb(0 0 0 / 30%);
+    margin-top: 80px;
+    padding: 10px;
+    background-color:rgb(0 0 0 / 50%);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -96,26 +98,28 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 65vw;
+    width: 70vw;
+    height: 100vh;
+}
+
+.first-parag {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgb(247, 247, 247);
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 30px;;
 }
 
 .intro {
-    /* width: clamp(20vw, 45vw, 50vw); */
+    width: clamp(20vw, 45vw, 50vw);
     font-family: 'amblebold';
     padding-bottom: 30px;
     font-size: 1.2rem;
 }
 
-.first-parag {
-    margin-bottom: 20px;
-    background-color: rgb(247, 247, 247);
-    padding-top: 80px;
-    padding-left: 30px;
-    padding-right: 30px;;
-}
-
 .titre {
-    padding-left: 30px;
+    padding-left: 60px;
 }
 
 .italic {
@@ -131,20 +135,17 @@
 
 form {
     width: 80%;
-    padding-left: 30px;
+    padding-left: 60px;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: column;
-    
+    font-size: 0.7rem;
 }
 
 .form-row {
     display: flex;
     flex-direction: row;
     gap:20px;
-    /*justify-content: flex-start; */
-    text-transform: uppercase;
-    font-size: 14px;
-    width: 50%;
 }
 
 .form-input {
@@ -153,18 +154,40 @@ form {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 250px;
   }
   
 .form-input input {
+    appearance: none;
     background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
+    border: 1px solid #E5E7EB;
     border-radius: 5px;
-    /*width: 90%; */
+    width: 100%;
     padding: 6px;
   }
   
 .form-input label {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.form-input input:focus {
+    outline: 0;
+    border: 1px solid #7798df;
+    box-shadow: 1px 1px 5px 2px rgb(170 170 170 / 50%);
+}
+
+.form-input input:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
+}
+
+.bottom{
+    padding: 20px 60px;
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    flex: 1;
 }
 
 button {
@@ -179,7 +202,6 @@ button {
     border-radius: 5px;
     padding: 10px 25px;
     cursor: pointer;
-
     line-height: 1;
     box-shadow: 0px 2px 5px grey;
 }
@@ -192,12 +214,6 @@ button:active {
     background-color: #008b07;
 }
 
-.bottom{
-    padding: 20px 30px;
-    background-color: rgb(247, 247, 247);
-    width: 100%;
-}
-
 .bottom-text {
     padding: 20px 0px;
 }
@@ -207,3 +223,15 @@ a {
     color: #008b3a;
     font-family: 'amblebold';
 }
+
+a:hover {
+    color: #1ca54a;
+}
+
+
+
+/*
+To do
+- div bottom qui va pas jusqu'en bas
+- validations form
+- adaptation aux changements de tailles d'écran --> une autre leçon ?
