@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Sign up form</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="first-row">
+            <div class="dark-background">
+                <img src="odin-lined.png" alt="Odin head">
+                <div class="logo">Odin</div>
+            </div>
+            <div class="credit">Photo by Steven Kamenar on Unsplash</div>
+        </div>
+        <div class="second-row">
+            <div class="first-parag">
+                 <p class="intro">
+                    This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams.
+                    Sign up <span class="italic">now</span> to get started.
+                </p>
+                <p class="intro">
+                    You <span class="italic">know</span> you want to.
+                 </p>
+            </div>
+            <div class="intro titre">Let's do this!</div>
+            <div class="form-style">
+                <form action="" method="get" id="login-form">
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="form-input">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-input">
+                            <label for="phone-number">Phone number</label>
+                            <input type="tel" name="phone-number" id="phone-number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="password-1">Password</label>
+                            <input type="password" name="password-1" id="password-1">
+                        </div>
+                        <div class="form-input">
+                            <label for="password-2">Confirm password</label>
+                            <input type="password" name="password-2" id="password-2">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom">
+                <button type="submit" form="login-form">Create account</button>
+                <div class="bottom-text">Already have an account? <a href="">Log in</a></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
