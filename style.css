@@ -2,32 +2,32 @@
 
 @font-face {
     font-family: 'norsebold';
-    src: url('font/norse-bold-webfont.woff2') format('woff2'),
-         url('font/norse-bold-webfont.woff') format('woff');
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'amblebold';
-    src: url('font/amble-bold-webfont.woff2') format('woff2'),
-         url('font/amble-bold-webfont.woff') format('woff');
+    src: url('fonts/amble-bold-webfont.woff2') format('woff2'),
+         url('fonts/amble-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'amblebold_italic';
-    src: url('font/amble-bolditalic-webfont.woff2') format('woff2'),
-         url('font/amble-bolditalic-webfont.woff') format('woff');
+    src: url('fonts/amble-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/amble-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ambleitalic';
-    src: url('font/amble-italic-webfont.woff2') format('woff2'),
-         url('font/amble-italic-webfont.woff') format('woff');
+    src: url('fonts/amble-italic-webfont.woff2') format('woff2'),
+         url('fonts/amble-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -35,8 +35,8 @@
 
 @font-face {
     font-family: 'ambleregular';
-    src: url('font/amble-regular-webfont.woff2') format('woff2'),
-         url('font/amble-regular-webfont.woff') format('woff');
+    src: url('fonts/amble-regular-webfont.woff2') format('woff2'),
+         url('fonts/amble-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -58,7 +58,7 @@
     position: relative;
     width: 30vw;
     height: 100vh;
-    background-image: url(background.jpg);
+    background-image: url(images/background.jpg);
     display: flex;
     justify-content: center;
     align-items: flex-start;
